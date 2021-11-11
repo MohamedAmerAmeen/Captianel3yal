@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>  
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -56,6 +56,13 @@
           <li><a href="SwimLevel.html">Swim Level</a></li>
           <li><a href="portfolio.html">Parents Info</a></li>
           <li><a href="contact.html">Contact Us</a></li>
+          <li class="dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li id="english"><a href="#">English</a></li>
+              <li id="arabic"><a href="#">العربيه</a></li>
+
+            </ul>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -70,8 +77,8 @@
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">WELCOME TO <span>CAPTAIN EL 3YAL</span></h2>
-          <p class="animate__animated animate__fadeInUp">The First Academy in Egypt Specialized in Infants & Children Swimming Training.</p>
+          <h2 id="title" class="animate__animated animate__fadeInDown"></h2>
+          <p id="subtitle" class="animate__animated animate__fadeInUp"></p>
 
         </div>
       </div>
@@ -79,18 +86,16 @@
       <!-- Slide 2 -->
       <div class="carousel-item">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">OUR MISSION</h2>
-          <p class="animate__animated animate__fadeInUp">The goal of Captain El3yal Swim Academy is to provide child with fundamental skills to swim in a safe and loving environment. We will assess each child’s swimming ability and place him or her into the best learn to swim class for their needs.</p>
-          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+          <h2 id="ourmission" class="animate__animated animate__fadeInDown">OUR MISSION</h2>
+          <p id="subourmission" class="animate__animated animate__fadeInUp">The goal of Captain El3yal Swim Academy is to provide child with fundamental skills to swim in a safe and loving environment. We will assess each child’s swimming ability and place him or her into the best learn to swim class for their needs.</p>
         </div>
       </div>
 
       <!-- Slide 3 -->
       <div class="carousel-item">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown"> OUR PROGRAMs </h2>
-          <p class="animate__animated animate__fadeInUp">Whether you're looking for swimming classes for babies, toddlers, kids, or adults, Captain El3yal! offers a variety of swim lessons for all ages and skill levels.</p>
-          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+          <h2 id="ourprogram" class="animate__animated animate__fadeInDown"> OUR PROGRAMs </h2>
+          <p id="subourprogram" class="animate__animated animate__fadeInUp">Whether you're looking for swimming classes for babies, toddlers, kids, or adults, Captain El3yal! offers a variety of swim lessons for all ages and skill levels.</p>
         </div>
       </div>
 
@@ -114,8 +119,10 @@
 
         <div class="row">
           <div class="col-lg-6 video-box">
-            <img src="assets/img/why-us.jpg" class="img-fluid" alt="">
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+            <video width="630" height="480" controls>
+              <source src="assets/img/intro.mp4" type="video/mp4">
+              <source src="assets/img/intro.mp4" type="video/mp4">
+            </video>
           </div>
 
           <div class="col-lg-6 d-flex flex-column justify-content-center p-6">
@@ -209,7 +216,7 @@
 
           <div class="col-lg-3 col-6 text-center">
             <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Hard Workers</p>
+            <p>Trainers and Support</p>
           </div>
 
         </div>
@@ -351,7 +358,60 @@
       </div>
     </section><!-- End Portfolio Section -->
 
+    <!-- ======= Service Details Section ======= -->
+    <section class="service-details">
+      <div class="container">
 
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="card">
+              <div class="card-img">
+                <iframe width="650" height="400" src="https://youtube.com/embed/kcghQWyrAos?feature=share" frameborder="0" ></iframe>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A Vedio From Our YouTube Channel for a training Session. 😍</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="card">
+              <div class="card-img">
+                <iframe width="650" height="400" src="https://youtube.com/embed/OvYNFe_O9R4?feature=share" frameborder="0" ></iframe>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A Vedio From Our YouTube Channel for a training Session. 😍</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i></a></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="card">
+              <div class="card-img">
+                <iframe width="650" height="400" src="https://www.youtube.com/embed/85t_-LvdjV4" frameborder="0" ></iframe>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A Vedio From Our YouTube Channel for a training Session. 😍</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> </a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="card">
+              <div class="card-img">
+                <iframe width="650" height="400" src="https://www.youtube.com/embed/tDRYnYOdEYI" frameborder="0" ></iframe>
+              </div>
+              <div class="card-body">
+                <p class="card-text">A Vedio From Our YouTube Channel for a training Session. 😍</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Service Details Section -->
 
   </main><!-- End #main -->
 
@@ -362,8 +422,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <h4>Captain El 3yal</h4>
+            <p>Your Children Will Swim Like a Dolphine</p>
           </div>
           <div class="col-lg-6">
             <form action="" method="post">
@@ -374,69 +434,18 @@
       </div>
     </div>
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>About Moderna</h3>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
     </div>
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Captain El 3yal</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="">Sparkle Development</a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -457,6 +466,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/GlobalResources.js"></script>
 
 </body>
 
