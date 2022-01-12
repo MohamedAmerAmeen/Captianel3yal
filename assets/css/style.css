@@ -1986,3 +1986,14 @@ section {
 #footer .credits a {
   color: #a2cce3;
 }
+
+.eyalVedio {
+  width: 630px;
+  height: 480px;
+}
+@media only screen and (max-width: 450px) {
+  .eyalVedio {
+    width: 100%;
+  }
+}
+
